@@ -220,4 +220,6 @@ def plot_predictions(images_list, colormap, model):
             [image_tensor, overlay, prediction_colormap], figsize=(18, 14)
         )
 
+plot_predictions(train_images[:4], colormap, model=model)
+plot_predictions(val_images[:4], colormap, model=model)
 print("Done!")
