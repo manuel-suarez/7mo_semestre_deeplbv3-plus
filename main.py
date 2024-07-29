@@ -17,7 +17,9 @@ from tensorflow import io as tf_io
 IMAGE_SIZE = 512
 BATCH_SIZE = 4
 NUM_CLASSES = 20
-DATA_DIR = "./instance-level_human_parsing/instance-level_human_parsing/Training"
+HOME_DIR = os.path.expanduser('~')
+DATA_DIR = os.path.join(HOME_DIR, "data", "./instance-level_human_parsing/instance-level_human_parsing/Training")
+print(DATA_DIR)
 NUM_TRAIN_IMAGES = 1000
 NUM_VAL_IMAGES = 50
 
